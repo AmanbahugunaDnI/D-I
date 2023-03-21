@@ -24,10 +24,10 @@ export default function Footer() {
                             <li className="mb-4">
                                 <a
                                     href="mailto:amanbahuguna009@gmail.com"
-                                    className="hover:underline"
+                                    className="hover:underline whitespace-pre-line"
                                     target="_blank"
                                 >
-                                    amanbahuguna009@gmail.com
+                                    amanbahuguna009@ gmail.com
                                 </a>
                             </li>
                             <li>
