@@ -11,9 +11,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     <>
       <NavBar />
       <div className="relative welcome-page bg-center bg-cover bg-no-repeat h-136 d-flex flex-column">
+        <div className='text-center text-3xl sm:text-5xl pt-32 font-bold '>
+          Home Services, on demand!
+        </div>
+        <div className='text-center text-2xl sm:text-3xl mt-28 text-blue-500 italic font-bold '>
+          Explore services!
+        </div>
       </div>
       <div className="justify-between py-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 mt-20 mb-40">
-        <Link href="/">
+        <Link href={route('customer.index')}>
           <img
             src={Service1}
             alt="D & I"
@@ -21,7 +27,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href="/">
+        <Link href={route('customer.index')}>
           <img
             src={Service2}
             alt="D & I"
@@ -29,7 +35,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href="/">
+        <Link href={route('customer.index')}>
           <img
             src={Service3}
             alt="D & I"
@@ -37,7 +43,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href="/">
+        <Link href={route('customer.index')}>
           <img
             src={Service4}
             alt="D & I"

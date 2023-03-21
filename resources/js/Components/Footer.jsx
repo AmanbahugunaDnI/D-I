@@ -27,7 +27,7 @@ export default function Footer() {
                                     className="hover:underline whitespace-pre-line"
                                     target="_blank"
                                 >
-                                    amanbahuguna009@ gmail.com
+                                    amanbahuguna009 @gmail.com
                                 </a>
                             </li>
                             <li>

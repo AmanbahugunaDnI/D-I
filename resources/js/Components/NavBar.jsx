@@ -68,14 +68,14 @@ export default function NavBar() {
                             className={`flex-1 pb-3 mt-9 md:block md:pb-0 md:mt-3 ${navbar ? "block" : "hidden"
                                 }`}
                         >
-                            <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0">
-                                <li className="text-black text-md hover:text-blue-500">
+                            <ul className="items-center justify-center space-y-8 md:flex md:space-x-20 md:space-y-0">
+                                <li className="text-black text-lg hover:text-blue-500">
                                     <Link href="/">Home</Link>
                                 </li>
-                                <li className="text-black text-md hover:text-blue-500">
+                                <li className="text-black text-lg hover:text-blue-500">
                                     <Link href="#">About</Link>
                                 </li>
-                                <li className="text-black text-md hover:text-blue-500">
+                                <li className="text-black text-lg hover:text-blue-500">
                                     <Link href="#">Contact</Link>
                                 </li>
                             </ul>
