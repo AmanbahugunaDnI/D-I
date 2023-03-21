@@ -1,25 +1,26 @@
 import { useState } from "react";
 import { Link } from "@inertiajs/react";
+import Logo from "../assets/dni.png"
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-black shadow font-helvetica_light">
+        <nav className="w-full bg-white shadow font-helvetica_light">
             <div className="justify-between py-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-2 md:block">
+                    <div className="flex items-center justify-between md:block">
                         <Link href="/">
-                            {/* <img
+                            <img
                                 src={Logo}
-                                alt="DLF foundation"
-                                title="DLF foundation"
+                                alt="D & I"
+                                title="Decorate and Innovate"
                                 className="h-16"
-                            /> */}
+                            />
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -61,34 +62,24 @@ export default function NavBar() {
                             className={`md:block justify-end md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                                 }`}
                         >
-                            
+
                         </div>
                         <div
                             className={`flex-1 pb-3 mt-9 md:block md:pb-0 md:mt-3 ${navbar ? "block" : "hidden"
                                 }`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0">
-                                <li className="text-white text-md hover:text-custom_hover">
+                                <li className="text-black text-md hover:text-blue-500">
                                     <Link href="/">Home</Link>
                                 </li>
-                                <li className="text-white text-md underline hover:text-custom_hover">
-                                    <Link href="/login">Existing Volunteer? Login</Link>
+                                <li className="text-black text-md hover:text-blue-500">
+                                    <Link href="#">About</Link>
                                 </li>
-                                <li className="text-white text-md underline hover:text-custom_hover">
-                                    <Link href="/register">New Volunteer? Register</Link>
+                                <li className="text-black text-md hover:text-blue-500">
+                                    <Link href="#">Contact</Link>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="ml-10">
-                        <Link href="/">
-                            <img
-                                src="https://www.dlffoundation.in/images/logo.svg"
-                                alt="DLF Engage"
-                                title="DLF Engage"
-                                className="h-12 hidden md:block"
-                            />
-                        </Link>
                     </div>
                 </div>
             </div>
