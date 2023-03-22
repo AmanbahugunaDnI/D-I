@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/react";
 
 export default function Footer() {
     return (
-        <div className="w-full bg-black shadow">
+        <div className="w-full bg-blue-300 shadow">
             <div className="max-w-7xl md:w-550 rounded-lg mx-auto px-4 p-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 mt-12">
                     <img
@@ -17,10 +17,10 @@ export default function Footer() {
                         className="h-24"
                     />
                     <div>
-                        <h2 className="mb-6 text-md font-semibold text-white uppercase dark:text-white">
+                        <h2 className="mb-6 text-md font-bold text-black uppercase dark:text-white">
                             Contact Us
                         </h2>
-                        <ul className="text-gray-400 dark:text-gray-400">
+                        <ul className="text-gray-800 dark:text-gray-400">
                             <li className="mb-4">
                                 <a
                                     href="mailto:amanbahuguna009@gmail.com"
@@ -42,10 +42,10 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-md font-semibold text-white uppercase dark:text-white">
+                        <h2 className="mb-6 text-md font-bold text-black uppercase dark:text-white">
                             About D&I
                         </h2>
-                        <ul className="text-gray-400 dark:text-gray-400">
+                        <ul className="text-gray-800 dark:text-gray-400">
                             <li className="mb-4">
                                 <a href="/about" className="hover:underline ">
                                     About Us
@@ -57,10 +57,10 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-md font-semibold text-white uppercase dark:text-white">
+                        <h2 className="mb-6 text-md font-bold text-black uppercase dark:text-white">
                             Reach Us
                         </h2>
-                        <ul className="text-gray-400 dark:text-gray-400">
+                        <ul className="text-gray-800 dark:text-gray-400">
                             <li className="mb-4 text-sm">
                                 <div>
                                     C Block 9/3 Type-3, New Tehri, Tehri Garhwal, Uttarakhand, 249001
@@ -78,7 +78,7 @@ export default function Footer() {
                 <hr className="mt-12 border-gray-500" />
 
                 <div className=" flex justify-between">
-                    <p className="text-left text-white my-4">
+                    <p className="text-left text-black my-4">
                         All © reserved to D&I</p>
                     <div className="flex text-white mt-4 mr-20 ">
                         <div className="flex">

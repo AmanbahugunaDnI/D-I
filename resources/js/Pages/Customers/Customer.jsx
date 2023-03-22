@@ -34,7 +34,7 @@ export default function NgoForm() {
             <NavBar />
             <div className="bg-white shadow max-w-7xl md:w-550 rounded-lg mx-auto px-4 mt-12 p-12 sm:px-6 lg:px-8 mb-20">
                 <form onSubmit={submit} >
-                    <div className="grid md:grid-cols-1 md:gap-6">
+                    <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="w-full mb-6">
                             <Input
                                 name="name"
