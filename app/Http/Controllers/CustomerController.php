@@ -43,7 +43,7 @@ class CustomerController extends Controller
             'service' => $request->service
         ]);
 
-        return redirect('/');
+        return redirect('/')->with(['success' => 'Service booked successfully! We will reach out to you shortly...']);
     }
 
     /**

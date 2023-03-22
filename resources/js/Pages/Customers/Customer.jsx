@@ -12,7 +12,6 @@ export default function NgoForm() {
         name: "",
         email: "",
         phone: "",
-        service: "",
     };
 
     const { data, setData, post, processing, errors, reset } = useForm(initialValues);
@@ -32,9 +31,12 @@ export default function NgoForm() {
     return (
         <>
             <NavBar />
-            <div className="bg-white shadow max-w-7xl md:w-550 rounded-lg mx-auto px-4 mt-12 p-12 sm:px-6 lg:px-8 mb-20">
+            <div className='text-center text-xl mt-10 italic font-semibold'>
+                Fill your details. We will contact you shortly...
+            </div>
+            <div className="bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 p-12 sm:px-6 lg:px-8 mb-20">
                 <form onSubmit={submit} >
-                    <div className="grid md:grid-cols-2 md:gap-6">
+                    <div className="grid md:grid-cols-1 md:gap-6">
                         <div className="w-full mb-6">
                             <Input
                                 name="name"
@@ -69,7 +71,7 @@ export default function NgoForm() {
                             />
                         </div>
 
-                        <div className="w-full mb-6">
+                        {/* <div className="w-full mb-6">
                             <Input
                                 name="service"
                                 id="service"
@@ -79,7 +81,7 @@ export default function NgoForm() {
                                 label="Service"
                                 mode="light"
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="flex mt-4">
                         <button className="inline-flex items-center px-8 py-2 bg-blue-500 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-custom_hover" processing={processing}>
