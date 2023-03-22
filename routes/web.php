@@ -36,6 +36,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/book', [CustomerController::class, 'index'])->name('customer.index');
+Route::resource('/book', CustomerController::class);
 
 require __DIR__.'/auth.php';

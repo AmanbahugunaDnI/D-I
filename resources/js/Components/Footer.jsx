@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/react";
 
 export default function Footer() {
     return (
-        <div className="w-full bg-black shadow font-helvetica_light">
+        <div className="w-full bg-black shadow">
             <div className="max-w-7xl md:w-550 rounded-lg mx-auto px-4 p-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 mt-12">
                     <img

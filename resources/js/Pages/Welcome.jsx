@@ -6,7 +6,7 @@ import Service3 from '../assets/service03.jpg';
 import Service4 from '../assets/service04.jpg';
 import { Link } from '@inertiajs/react';
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
+export default function Welcome() {
   return (
     <>
       <NavBar />
@@ -19,7 +19,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         </div>
       </div>
       <div className="justify-between py-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 mt-20 mb-40">
-        <Link href={route('customer.index')}>
+        <Link href={route('book.index')}>
           <img
             src={Service1}
             alt="D & I"
@@ -27,7 +27,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href={route('customer.index')}>
+        <Link href={route('book.index')}>
           <img
             src={Service2}
             alt="D & I"
@@ -35,7 +35,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href={route('customer.index')}>
+        <Link href={route('book.index')}>
           <img
             src={Service3}
             alt="D & I"
@@ -43,7 +43,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             className="h-36 hover:scale-105"
           />
         </Link>
-        <Link href={route('customer.index')}>
+        <Link href={route('book.index')}>
           <img
             src={Service4}
             alt="D & I"

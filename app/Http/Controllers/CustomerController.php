@@ -8,8 +8,8 @@ use App\Models\Customer;
 
 class CustomerController extends Controller
 {
-     /**
-     * Display a listing of the resource.
+    /**
+     * Display a listing of the customer.
      *
      * @return \Inertia\Response
      */
@@ -19,17 +19,17 @@ class CustomerController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new customer.
      *
      * @return \Inertia\Response
      */
     public function create()
     {
-        return Inertia::render('Ngos/Create');
+        //
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created customer in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
@@ -38,20 +38,16 @@ class CustomerController extends Controller
     {
         Customer::create([
             'name' => $request->name,
-            'brief' => $request->brief,
-            'beneficiary_brief' => $request->beneficiary_brief,
-            'headquarters' => $request->headquarters,
-            'contact_person_name' => $request->contact_person_name,
-            'contact_person_email' => $request->contact_person_email
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'service' => $request->service
         ]);
 
-        return redirect()->route('ngo.index')->with([
-            'success' => 'NGO/Partner Organization created successfully!'
-        ]);
+        return redirect('/');
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified customer.
      *
      * @param  \App\Models\Customer  $customer
      */
@@ -61,7 +57,7 @@ class CustomerController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified customer.
      *
      * @param  \App\Models\Customer  $customer
      * @return \Inertia\Response
@@ -72,7 +68,7 @@ class CustomerController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified customer in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Customer  $ngo
@@ -80,11 +76,11 @@ class CustomerController extends Controller
      */
     public function update(Request $request, Customer $customer)
     {
-       //
+        //
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified customer from storage.
      *
      * @return \Illuminate\Http\RedirectResponse
      */

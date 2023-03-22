@@ -15,13 +15,13 @@ export default function NgoForm() {
         service: "",
     };
 
-    const { data, setData, post, patch, processing, errors, reset } = useForm(initialValues);
+    const { data, setData, post, processing, errors, reset } = useForm(initialValues);
 
     console.log(data)
 
     const submit = (e) => {
         e.preventDefault();
-        post(route('ngo.store'));
+        post(route('book.store'));
     };
 
     function cancelOperation() {
