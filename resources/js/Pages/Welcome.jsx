@@ -4,6 +4,12 @@ import Service1 from '../assets/service01.jpg';
 import Service2 from '../assets/service02.jpg';
 import Service3 from '../assets/service03.jpg';
 import Service4 from '../assets/service04.jpg';
+import Floors from '../assets/floors_and_tiles.jpeg';
+import HomeRepairs from '../assets/home_repairs.jpeg';
+import MetalWorks from '../assets/metal_works.jpeg';
+import ModularKitchen from '../assets/modular_kitchen.jpeg';
+import PestControl from '../assets/pest_control.jpeg';
+import WallpaperInstallation from '../assets/wallpaper_installation.jpeg';
 import { Link } from '@inertiajs/react';
 import Carousel from '../assets/decorate.jpg'
 import Carousel01 from '../assets/carousel01.jpg';
@@ -76,39 +82,66 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-      <div className="justify-between py-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 mt-20 mb-40">
-        <Link href={route('book.index')}>
-          <img
-            src={Service1}
-            alt="D & I"
-            title="Decorate and Innovate"
-            className="h-36 hover:scale-105"
-          />
-        </Link>
-        <Link href={route('book.index')}>
-          <img
-            src={Service2}
-            alt="D & I"
-            title="Decorate and Innovate"
-            className="h-36 hover:scale-105"
-          />
-        </Link>
-        <Link href={route('book.index')}>
-          <img
-            src={Service3}
-            alt="D & I"
-            title="Decorate and Innovate"
-            className="h-36 hover:scale-105"
-          />
-        </Link>
-        <Link href={route('book.index')}>
-          <img
-            src={Service4}
-            alt="D & I"
-            title="Decorate and Innovate"
-            className="h-36 hover:scale-105"
-          />
-        </Link>
+      <div className='bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 p-12 sm:px-6 lg:px-8 mb-20'>
+        <div className='text-center text-2xl mb-12 italic font-semibold'>
+          Checkout our services...
+        </div>
+        <div className="grid md:grid-cols-2 md:gap-6">
+          <Link href={route('book.index')}>
+            <img
+              src={Floors}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'> Hardwood floors & tiles installation & refinishing</div>
+          </Link>
+          <Link href={route('book.index')}>
+            <img
+              src={HomeRepairs}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Home building and repairs</div>
+          </Link>
+          <Link href={route('book.index')}>
+            <img
+              src={MetalWorks}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Metal Works</div>
+          </Link>
+          <Link href={route('book.index')}>
+            <img
+              src={ModularKitchen}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Modular Kitchen Service</div>
+          </Link>
+          <Link href={route('book.index')}>
+            <img
+              src={PestControl}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Pest Control Services</div>
+          </Link>
+          <Link href={route('book.index')}>
+            <img
+              src={WallpaperInstallation}
+              alt="D & I"
+              title="Decorate and Innovate"
+              className="h-96 w-96 hover:scale-105"
+            />
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Wallpaper & contact paper installation</div>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
