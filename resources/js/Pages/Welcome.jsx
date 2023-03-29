@@ -75,13 +75,6 @@ export default function Welcome() {
             ))}
           </div>
         </div>
-
-        <div className='text-center text-3xl sm:text-5xl pt-32 font-bold '>
-          Home Services, on demand!
-        </div>
-        <div className='text-center text-2xl sm:text-3xl mt-28 text-blue-500 italic font-bold '>
-          Explore services!
-        </div>
       </div>
       <div className="justify-between py-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 mt-20 mb-40">
         <Link href={route('book.index')}>
