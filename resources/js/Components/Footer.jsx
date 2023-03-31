@@ -1,7 +1,7 @@
 import React from "react";
-import Facebook from "../../../public/facebook-icon.png";
-import Twitter from "../../../public/twitter-icon.png";
-import Instagram from "../../../public/instagram-icon.png";
+import Instagram from '../assets/igrm.png';
+import Facebook from '../assets/fbrm.png';
+import Twitter from '../assets/twrm.png';
 import Logo from "../assets/dni.png";
 import { Link } from "@inertiajs/react";
 
@@ -89,7 +89,7 @@ export default function Footer() {
                                 <img
                                     src={Facebook}
                                     alt="Facebook"
-                                    className="w-6 h-6 mr-2"
+                                    className="w-4 h-6 mr-2"
                                 />
                             </a>
                         </div>
@@ -101,7 +101,7 @@ export default function Footer() {
                                 <img
                                     src={Instagram}
                                     alt="Instagram"
-                                    className="w-6 h-6 mr-2"
+                                    className="w-10 h-6 mr-2"
                                 />
                             </a>
                         </div>
