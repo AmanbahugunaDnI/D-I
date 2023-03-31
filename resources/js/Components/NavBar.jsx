@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@inertiajs/react";
-import Logo from "../assets/dni.png"
+import Logo from "../assets/dni.png";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -76,7 +76,7 @@ export default function NavBar() {
                                     <Link href="#">About</Link>
                                 </li>
                                 <li className="text-black text-lg hover:text-blue-500">
-                                    <Link href="#">Contact</Link>
+                                    <Link href="/contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>
