@@ -94,7 +94,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'> Hardwood floors & tiles installation & refinishing</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'> Hardwood floors & tiles installation & refinishing</div>
           </Link>
           <Link href={route('book.index')}>
             <img
@@ -103,7 +103,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Home building and repairs</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'>Home building and repairs</div>
           </Link>
           <Link href={route('book.index')}>
             <img
@@ -112,7 +112,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Metal Works</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'>Metal Works</div>
           </Link>
           <Link href={route('book.index')}>
             <img
@@ -121,7 +121,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Modular Kitchen Service</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'>Modular Kitchen Service</div>
           </Link>
           <Link href={route('book.index')}>
             <img
@@ -130,7 +130,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Pest Control Services</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'>Pest Control Services</div>
           </Link>
           <Link href={route('book.index')}>
             <img
@@ -139,7 +139,7 @@ export default function Welcome() {
               title="Decorate and Innovate"
               className="h-96 w-96 hover:scale-105"
             />
-            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4'>Wallpaper & contact paper installation</div>
+            <div className='text-xl font-semibold text-center italic text-blue-400 hover:underline mt-4 mb-12 md:mb-6'>Wallpaper & contact paper installation</div>
           </Link>
         </div>
       </div>
