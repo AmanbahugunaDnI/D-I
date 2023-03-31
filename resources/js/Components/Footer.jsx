@@ -80,7 +80,7 @@ export default function Footer() {
                 <div className=" flex justify-between">
                     <p className="text-left text-black my-4">
                         All © reserved to D&I</p>
-                    <div className="flex text-white mt-4 mr-20 ">
+                    <div className="flex text-white mt-4 sm:ml-5">
                         <div className="flex">
                             <a
                                 target={"_blank"}
