@@ -57,7 +57,17 @@ const PrivacyPolicy = () => {
                             target={"_blank"}>
                             +91-7895028763
                         </a>
-                        <div>   
+                        <div className="mt-6 md:mt-0">
+                            Atif Khan
+                        </div>
+                        <a className="text-blue-500 hover:underline" href="atifkhandmx@gmial.com" target={"_blank"}>
+                            atifkhandmx@gmial.com
+                        </a>
+                        <a className="text-blue-500 hover:underline" href="tel:+9181267 52296"
+                            target={"_blank"}>
+                            +91-81267 52296
+                        </a>
+                        <div className="mt-6 md:mt-0">
                             Umer Khan
                         </div>
                         <div className="text-blue-500 hover:underline">
