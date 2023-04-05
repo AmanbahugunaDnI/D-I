@@ -31,10 +31,10 @@ export default function Welcome() {
   };
 
   const captions = [
-    "D&I Services",
-    "D&I Services",
-    "D&I Services",
-    "D&I Services"
+    "D&I Modular Kitchen Services",
+    "D&I Wallpaper Jobs",
+    "D&I Pest Control Services",
+    "D&I Home Building and Repairs"
   ];
 
 
@@ -54,7 +54,7 @@ export default function Welcome() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"
+            className={`absolute inset-0 transition-opacity duration-1000 italic text-center ${index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
           >
             <img
