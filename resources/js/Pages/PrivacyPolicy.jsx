@@ -60,8 +60,8 @@ const PrivacyPolicy = () => {
                         <div className="mt-6 md:mt-0">
                             Atif Khan
                         </div>
-                        <a className="text-blue-500 hover:underline" href="atifkhandmx@gmial.com" target={"_blank"}>
-                            atifkhandmx@gmial.com
+                        <a className="text-blue-500 hover:underline" href="atifkhandmx@gmail.com" target={"_blank"}>
+                            atifkhandmx@gmail.com
                         </a>
                         <a className="text-blue-500 hover:underline" href="tel:+9181267 52296"
                             target={"_blank"}>
