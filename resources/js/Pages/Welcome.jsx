@@ -1,9 +1,5 @@
 import NavBar from '@/Components/NavBar';
 import Footer from '@/Components/Footer';
-import Service1 from '../assets/service01.jpg';
-import Service2 from '../assets/service02.jpg';
-import Service3 from '../assets/service03.jpg';
-import Service4 from '../assets/service04.jpg';
 import Floors from '../assets/floors_and_tiles.jpeg';
 import HomeRepairs from '../assets/home_repairs.jpeg';
 import MetalWorks from '../assets/metal_works.jpeg';
@@ -50,7 +46,7 @@ export default function Welcome() {
   return (
     <>
       <NavBar />
-      <div className="relative h-136">
+      <div className="relative md:h-136 h-96">
         {images.map((image, index) => (
           <div
             key={index}
