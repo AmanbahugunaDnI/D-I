@@ -27,17 +27,16 @@ export default function Footer() {
                                     className="hover:underline whitespace-pre-line"
                                     target="_blank"
                                 >
-                                    amanbahuguna009 @gmail.com
+                                    umerimiume999 @gmail.com
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="tel:+917895028763"
+                                    href="tel:+919528124903"
                                     className="hover:underline"
                                     target="_blank"
                                 >
-                                    +91-7895028763
-                                </a>
+                                    +91-9528124903                                </a>
                             </li>
                         </ul>
                     </div>
@@ -51,9 +50,6 @@ export default function Footer() {
                                     About Us
                                 </a>
                             </li>
-                            {/* <li>
-                                <a href="/gallery">Gallery</a>
-                            </li> */}
                         </ul>
                     </div>
                     <div>
@@ -63,11 +59,11 @@ export default function Footer() {
                         <ul className="text-gray-800 dark:text-gray-400">
                             <li className="mb-4 text-sm">
                                 <div>
-                                    C Block 9/3 Type-3, New Tehri, Tehri Garhwal, Uttarakhand, 249001
+                                    Dehradun, Uttarakhand, India
                                 </div>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <Link href="/privacy-policy" className="hover:underline">
                                     Privacy Policy
                                 </Link>
                             </li>
@@ -96,7 +92,7 @@ export default function Footer() {
                         <div className="flex">
                             <a
                                 target={"_blank"}
-                                href="#"
+                                href="https://instagram.com/decorateinnovate?igshid=YmMyMTA2M2Y="
                             >
                                 <img
                                     src={Instagram}

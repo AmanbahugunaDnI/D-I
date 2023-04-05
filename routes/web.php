@@ -40,5 +40,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('/book', CustomerController::class);
 Route::get('/contact', [PublicPagesController::class, 'contact']);
 Route::post('/contact/store', [PublicPagesController::class, 'storeContact'])->name('contact.store');
+Route::get('/about', [PublicPagesController::class, 'about']);
+Route::get('/privacy-policy', [PublicPagesController::class, 'privacy']);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

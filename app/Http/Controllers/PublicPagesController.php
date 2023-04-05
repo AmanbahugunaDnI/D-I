@@ -38,4 +38,13 @@ class PublicPagesController extends Controller
             'success' => 'Submitted successfully!'
         ]);
     }
+    public function about()
+    {
+        return Inertia::render('About');
+    }
+
+    public function privacy()
+    {
+        return Inertia::render('PrivacyPolicy');
+    }
 }
