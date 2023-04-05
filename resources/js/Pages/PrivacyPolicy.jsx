@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
         <>
             <NavBar />
             <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-8 text-justify">
-                <h1 class="text-5xl font-bold mb-12 mt-14">Privacy Policy</h1>
-                <div className="italic mb-20 text-lg">
+                <h1 class="md:text-5xl text-3xl font-bold md:mb- mb-8 md:mt-14 mt-6">Privacy Policy</h1>
+                <div className="italic md:mb-20 mb-10 md:text-lg text-sm">
                     <p>
                         At D&I Home Service Company, we are committed to protecting the privacy and security of our customers' personal information. This privacy policy describes how we collect, use, and protect your personal information when you use our services.<br /> <br />
                     </p>

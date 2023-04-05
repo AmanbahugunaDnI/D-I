@@ -7,8 +7,8 @@ const About = () => {
         <>
             <NavBar />
             <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-8 text-justify">
-                <h1 class="text-5xl font-bold mb-12 mt-14">About</h1>
-                <div className="italic mb-20 text-lg">
+                <h1 className="md:text-5xl text-3xl font-bold md:mb- mb-8 md:mt-14 mt-6">About</h1>
+                <div className="italic md:mb-20 mb-10 md:text-lg text-sm">
                     <p>
                         D&I Home Service is a company that is dedicated to providing top-notch home services to our clients. Our mission is to help homeowners keep their homes in great condition by offering a range of services that cater to their needs. <br /> <br />
                     </p>
