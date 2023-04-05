@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
                             target={"_blank"}>
                             +91-7895028763
                         </a>
-                        <div>
+                        <div>   
                             Umer Khan
                         </div>
                         <div className="text-blue-500 hover:underline">

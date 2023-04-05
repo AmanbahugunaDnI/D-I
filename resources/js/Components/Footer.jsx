@@ -23,11 +23,11 @@ export default function Footer() {
                         <ul className="text-gray-800 dark:text-gray-400">
                             <li className="mb-4">
                                 <a
-                                    href="mailto:amanbahuguna009@gmail.com"
+                                    href="mailto:decorateinnovate@gmail.com"
                                     className="hover:underline whitespace-pre-line"
                                     target="_blank"
                                 >
-                                    umerimiume999 @gmail.com
+                                    decorateinnovate @gmail.com
                                 </a>
                             </li>
                             <li>
@@ -57,7 +57,7 @@ export default function Footer() {
                             Reach Us
                         </h2>
                         <ul className="text-gray-800 dark:text-gray-400">
-                            <li className="mb-4 text-sm">
+                            <li className="mb-4 text-md">
                                 <div>
                                     Dehradun, Uttarakhand, India
                                 </div>
