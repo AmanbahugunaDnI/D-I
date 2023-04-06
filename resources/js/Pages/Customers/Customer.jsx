@@ -5,8 +5,9 @@ import Input from '@/Components/Input';
 import TextArea from '@/Components/TextArea';
 import NavBar from '@/Components/NavBar';
 import Footer from '@/Components/Footer';
+import Guest from '@/Layouts/GuestLayout';
 
-export default function NgoForm() {
+export default function Customer() {
 
     const initialValues = {
         name: "",
@@ -15,8 +16,6 @@ export default function NgoForm() {
     };
 
     const { data, setData, post, processing, errors, reset } = useForm(initialValues);
-
-    console.log(data)
 
     const submit = (e) => {
         e.preventDefault();
@@ -30,48 +29,49 @@ export default function NgoForm() {
 
     return (
         <>
-            <NavBar />
-            <div className='text-center text-xl mt-10 italic font-semibold'>
-                Fill your details. We will contact you shortly...
-            </div>
-            <div className="bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 p-12 sm:px-6 lg:px-8 mb-20">
-                <form onSubmit={submit} >
-                    <div className="grid md:grid-cols-1 md:gap-6">
-                        <div className="w-full mb-6">
-                            <Input
-                                name="name"
-                                id="name"
-                                value={data.name}
-                                onChange={val => setData({ ...data, name: val })}
-                                label="Name"
-                                required
-                                mode="light"
-                            />
-                        </div>
+            <Guest>
+                <NavBar />
+                <div className='text-center text-xl mt-10 italic font-semibold'>
+                    Fill your details. We will contact you shortly...
+                </div>
+                <div className="bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 p-12 sm:px-6 lg:px-8 mb-20">
+                    <form onSubmit={submit} >
+                        <div className="grid md:grid-cols-1 md:gap-6">
+                            <div className="w-full mb-6">
+                                <Input
+                                    name="name"
+                                    id="name"
+                                    value={data.name}
+                                    onChange={val => setData({ ...data, name: val })}
+                                    label="Name"
+                                    required
+                                    mode="light"
+                                />
+                            </div>
 
-                        <div className="w-full mb-6">
-                            <Input
-                                name="email"
-                                id="email"
-                                value={data.email}
-                                onChange={val => setData({ ...data, email: val })}
-                                label="Email"
-                                mode="light"
-                            />
-                        </div>
+                            <div className="w-full mb-6">
+                                <Input
+                                    name="email"
+                                    id="email"
+                                    value={data.email}
+                                    onChange={val => setData({ ...data, email: val })}
+                                    label="Email"
+                                    mode="light"
+                                />
+                            </div>
 
-                        <div className="w-full mb-6">
-                            <Input
-                                name="phone"
-                                id="phone"
-                                value={data.phone}
-                                onChange={val => setData({ ...data, phone: val })}
-                                label="Phone"
-                                mode="light"
-                            />
-                        </div>
+                            <div className="w-full mb-6">
+                                <Input
+                                    name="phone"
+                                    id="phone"
+                                    value={data.phone}
+                                    onChange={val => setData({ ...data, phone: val })}
+                                    label="Phone"
+                                    mode="light"
+                                />
+                            </div>
 
-                        {/* <div className="w-full mb-6">
+                            {/* <div className="w-full mb-6">
                             <Input
                                 name="service"
                                 id="service"
@@ -82,19 +82,20 @@ export default function NgoForm() {
                                 mode="light"
                             />
                         </div> */}
-                    </div>
-                    <div className="flex mt-4">
-                        <button className="inline-flex items-center px-8 py-2 bg-blue-500 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-custom_hover" processing={processing}>
-                            Book
-                        </button>
+                        </div>
+                        <div className="flex mt-4">
+                            <button className="inline-flex items-center px-8 py-2 bg-blue-500 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-custom_hover" processing={processing}>
+                                Book
+                            </button>
 
-                        <button className="ml-4 inline-flex items-center px-4 py-2 bg-white-800 border border-transparent  font-semibold text-xs text-gray-700 uppercase tracking-widest hover:bg-slate-200" onClick={cancelOperation}>
-                            Cancel
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <Footer />
+                            <button className="ml-4 inline-flex items-center px-4 py-2 bg-white-800 border border-transparent  font-semibold text-xs text-gray-700 uppercase tracking-widest hover:bg-slate-200" onClick={cancelOperation}>
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <Footer />
+            </Guest>
         </>
     )
 }

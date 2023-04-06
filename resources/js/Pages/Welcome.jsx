@@ -12,6 +12,7 @@ import Carousel01 from '../assets/carousel01.jpg';
 import Carousel02 from '../assets/carousel02.jpg';
 import Carousel03 from '../assets/carousel03.jpg';
 import React from "react";
+import Guest from '@/Layouts/GuestLayout';
 
 export default function Welcome() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -45,6 +46,7 @@ export default function Welcome() {
 
   return (
     <>
+    <Guest>
       <NavBar />
       <div className="relative md:h-136 h-96">
         {images.map((image, index) => (
@@ -140,6 +142,7 @@ export default function Welcome() {
         </div>
       </div>
       <Footer />
+      </Guest>
     </>
   );
 }
