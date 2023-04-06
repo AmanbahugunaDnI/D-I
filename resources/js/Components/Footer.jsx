@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/react";
 
 export default function Footer() {
     return (
-        <div className="w-full bg-blue-300 shadow">
+        <div className="w-full bg-blue-200 shadow">
             <div className="max-w-7xl md:w-550 rounded-lg mx-auto px-4 p-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 mt-12">
                     <img
@@ -74,7 +74,7 @@ export default function Footer() {
                 <hr className="mt-12 border-gray-500" />
 
                 <div className=" flex justify-between">
-                    <p className="text-left text-black my-4">
+                    <p className="text-left text-black text-sm md:text-lg my-4">
                         All © reserved to D&I</p>
                     <div className="flex text-white mt-4 sm:ml-5">
                         <div className="flex">
@@ -85,7 +85,7 @@ export default function Footer() {
                                 <img
                                     src={Facebook}
                                     alt="Facebook"
-                                    className="w-4 h-6 mr-2"
+                                    className="w-3 h-4 md:w-4 md:h-6 mr-2"
                                 />
                             </a>
                         </div>
@@ -97,7 +97,7 @@ export default function Footer() {
                                 <img
                                     src={Instagram}
                                     alt="Instagram"
-                                    className="w-10 h-6 mr-2"
+                                    className=" w-6 h-4 md:w-10 md:h-6 mr-2"
                                 />
                             </a>
                         </div>
@@ -109,7 +109,7 @@ export default function Footer() {
                                 <img
                                     src={Twitter}
                                     alt="Twitter"
-                                    className="w-6 h-6 mr-2"
+                                    className="w-4 h-4 md:w-4 md:h-6 mr-2"
                                 />
                             </a>
                         </div>
