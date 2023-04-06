@@ -80,8 +80,8 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-      <div className='bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 p-12 sm:px-6 lg:px-8 mb-20'>
-        <div className='text-center text-2xl mb-12 italic font-semibold'>
+      <div className='bg-white shadow max-w-7xl md:w-480 rounded-lg mx-auto px-4 mt-8 md:-mt-4 p-12 sm:px-6 lg:px-8 mb-20'>
+        <div className='text-center text-2xl md:text-3xl mb-12 italic font-semibold'>
           Checkout our services...
         </div>
         <div className="grid md:grid-cols-2 md:gap-6">
