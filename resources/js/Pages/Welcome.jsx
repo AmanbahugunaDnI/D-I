@@ -7,20 +7,20 @@ import ModularKitchen from '../assets/modular_kitchen.jpeg';
 import PestControl from '../assets/pest_control.jpeg';
 import WallpaperInstallation from '../assets/wallpaper_installation.jpeg';
 import { Link } from '@inertiajs/react';
-import Carousel from '../assets/decorate.jpg'
-import Carousel01 from '../assets/carousel01.jpg';
-import Carousel02 from '../assets/carousel02.jpg';
-import Carousel03 from '../assets/carousel03.jpg';
+import Carousel01 from '../assets/carousel1.jpg';
+import Carousel02 from '../assets/carousel2.jpg';
+import Carousel03 from '../assets/carousel3.jpg';
+import Carousel04 from '../assets/carousel4.jpg';
 import React from "react";
 import Guest from '@/Layouts/GuestLayout';
 
 export default function Welcome() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const images = [
-    { value: Carousel03 },
     { value: Carousel01 },
-    { value: Carousel },
     { value: Carousel02 },
+    { value: Carousel03 },
+    { value: Carousel04 },
   ];
 
   const handleClick = (index) => {
