@@ -53,6 +53,7 @@ export default function Customer() {
                                 <Input
                                     name="email"
                                     id="email"
+                                    type='email'
                                     value={data.email}
                                     onChange={val => setData({ ...data, email: val })}
                                     label="Email"

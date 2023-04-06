@@ -50,6 +50,7 @@ const Contact = () => {
                                 <Input
                                     id="email"
                                     name="email"
+                                    type='email'
                                     value={data.email}
                                     onChange={val => setData({ ...data, email: val })}
                                     label="Email*"
